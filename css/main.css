@@ -121,6 +121,7 @@ body{
 }
 
 .quote-body{
+    width: 100%;
     /* padding:70px 300px; */
     background-color: #eee;
     .quote{
@@ -149,9 +150,6 @@ body{
         flex-direction: column;
         gap:10px;
         text-align: center;
-    }
-    .quote-body{
-        width: 100px;
     }
 }
 
