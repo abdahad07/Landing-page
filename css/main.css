@@ -77,6 +77,8 @@ body{
     }
     .body2-card{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap:30px;
         a{
             text-decoration: none;
@@ -119,7 +121,7 @@ body{
 }
 
 .quote-body{
-    padding:70px 300px;
+    /* padding:70px 300px; */
     background-color: #eee;
     .quote{
         font-size: 25px;
@@ -139,7 +141,22 @@ body{
     color:#fff;
 }
 
+@media (max-width:430px){
+    .header{
+        padding:0;
+    }
+    .body{
+        flex-direction: column;
+        gap:10px;
+        text-align: center;
+    }
+    .quote-body{
+        width: 100px;
+    }
+}
+
 @media (min-width:1400px) {
+
     .header{
         font-size: 25px;
     }
