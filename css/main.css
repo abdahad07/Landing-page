@@ -1,5 +1,4 @@
 
-
 body{
     display: flex;
     flex-direction: column;
@@ -27,11 +26,13 @@ body{
         font-size: 15px;
     }
 }
-
 .body{
     padding-top:40px;
     padding-bottom:40px;
     color:#fff;
+    img{
+        width:100%;
+    }
     .left,
     .right{
         flex:1;
@@ -58,26 +59,11 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        width:150px;
-        overflow: hidden;
-    }
-    .right img{
-        position: absolute;
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        transition: transform 0.3s ease;
-        object-position:bottom;
-    }
-    .right img:hover{
-        transform:scale(2);
     }
 }
-
 .body2-content{
     padding-bottom: 50px;    
+    /* padding:10px 100px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,19 +125,21 @@ body{
     }
     
 }
-
 .quote-body{
+    /* width: 100%; */
+    /* padding:70px 300px; */
     padding:20px;
     background-color: #eee;
     .quote{
         font-size: 25px;
     }
     .quote-credits{
+        /* padding-right: 30px; */
+        /* text-align: end; */
         font-size: 40px;
         text-align: end;
     }
 }
-
 .footer{
     display: flex;
     justify-content: center;
@@ -159,7 +147,6 @@ body{
     padding:30px 0;
     color:#fff;
 }
-
 @media (max-width:770px){
     .header{
         padding:0;
@@ -186,7 +173,6 @@ body{
         }
     }
 }
-
 @media (min-width:1400px) {
     .header{
         font-size: 25px;
