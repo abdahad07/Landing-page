@@ -1,3 +1,5 @@
+
+
 body{
     display: flex;
     flex-direction: column;
@@ -53,6 +55,11 @@ body{
             color:white;
             text-decoration: none;
         }
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -130,4 +137,15 @@ body{
     background-color: #1F2937;
     padding:30px 0;
     color:#fff;
+}
+
+@media (min-width:1400px) {
+    .header{
+        font-size: 25px;
+    }
+    .body{
+        .left{
+            font-size:25px;
+        }
+    }
 }
